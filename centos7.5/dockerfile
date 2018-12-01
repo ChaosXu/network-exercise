@@ -1,3 +1,3 @@
 FROM centos:7.5.1804
-RUN yum update && yum install -y iproute2 iputils-arping net-tools tcpdump curl telnet iputils-tracepath traceroute
+RUN yum update -y && yum install -y iproute2 iputils-arping net-tools tcpdump curl telnet iputils-tracepath traceroute
 ENTRYPOINT /usr/sbin/sshd -D
